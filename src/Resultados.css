@@ -1,3 +1,5 @@
-h1{
-    color: red;
+.list{
+    background-color:white;
+    margin: 16px 50px;
+    border-radius: 5px;
 }

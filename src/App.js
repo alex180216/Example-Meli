@@ -9,7 +9,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       books:[
-        {id:0, }
+        {id:'1', thumbnail:'http://http2.mlstatic.com/D_608380-MLA32167208403_092019-O.jpg', title:'Mesa Mesita De Luz Vintage Retro Nordica Pino Con Cajones' , price:'2450', address:'Capital'},
+        {id:'0', thumbnail:'http://http2.mlstatic.com/D_608380-MLA32167208403_092019-O.jpg', title:'Mesa Mesita De Luz Vintage Retro Nordica Pino Con Cajones' , price:'2450', address:'Capital'}
       ]
     };
   }
@@ -19,7 +20,7 @@ class App extends React.Component {
       <div className="app">
         
           <Buscador/>
-          <Resultados nombre="Alex en linea"/>
+          <Resultados items={this.state.books}/>
       </div>
        
       

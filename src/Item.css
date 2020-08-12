@@ -1,0 +1,31 @@
+.item{
+    margin: 16px;
+    display: grid;
+    grid-template-columns: auto auto 200px;
+    justify-content: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.item > .image > img{
+    width: 180px;
+    height: 180px;
+    margin: 16px;
+    border-radius: 4px;
+}
+
+.item > .info{
+    padding-top: 16px;
+}
+.item > .info > .price {
+    font-size: 24px ;
+    margin-bottom: 32px;
+}
+.item > .info > .title {
+    font-size: 18px ;
+    text-decoration: none;
+    color: black;
+}
+.item > .address{
+    margin-top: 40px;
+    font-size: 12px;
+}
