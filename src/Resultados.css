@@ -2,4 +2,6 @@
     background-color:white;
     margin: 16px 50px;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
