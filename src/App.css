@@ -10,35 +10,6 @@ body {
   grid-template-columns: minmax(100%, 350px);
 }
 
-.container-search{
-  background-color: #ffe600;
-  width: 100%;
-  height: auto;
-  display: grid;
-  gap: 20px;
-  justify-content: center;
-  grid-template-columns: 10% 80% 10%;
-}
-
-.container-search > form{
-  grid-column: 2/3; 
-  padding: 10px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 10% 85% 5%;
-}
-.app > .container-search > form > .app-logo{
-  width: 65px;
-}
-.app > .container-search > form> input{
-  padding-left: 10px;
-  border-color: #eeeeee00;
-  border-radius: 5px;
-}
-.app > .container-search > form> button{
-  border-radius: 3px;
-  border-color: #eeeeee00;
-}
 
 
 

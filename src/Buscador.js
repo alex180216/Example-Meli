@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
+import Search from './Search';
+import './Buscador.css';
 import logosearch from './ic_Search.png';
 import logo from './Logo_ML.png';
 
-class Saludo extends Component{
+class Buscador extends Component{
     constructor(){
         super();
+        
     }
 
     handleClick =(e) => {
@@ -13,26 +16,35 @@ class Saludo extends Component{
     }
     handleNameProduct = (e) => {
         e.preventDefault();
-        this.setState({nombre: e.target.value});
-        console.log(e.target.value);
+        this.setState({busqueda: e.target.value});
         
     }
     
     render() {
         return(
             <div className="container-search">
-                <form>
-                    <img src={logo} className="app-logo" alt="logo" />
-                    <input type="text" onChange={this.handleNameProduct} className="new-task" placeholder="Nunca dejes de buscar"/>
-                    <button type="submit" className="search-button" onClick={this.handleClick}>
-                        <div role="img" aria-label="Logo de Busqueda">
+                <div className="container-interno">
+                    <div className="app-logo">
+                        <img src={logo} alt="logo" />
+                    </div>
+                    <div className="search">
+                        <Search />
+                    </div>
+                    <div className="actions">
+                        <button className="search-button">
                             <img src={logosearch} alt="search"/> 
-                        </div>
-                    </button>
-                </form>
+
+                        </button>
+                    </div>
+                </div>
+                               
             </div>
+            
+
+            
         );
     }
+    
 }
 
-export default Saludo;
+export default Buscador;

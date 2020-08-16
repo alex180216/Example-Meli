@@ -1,0 +1,28 @@
+.container-search{
+    width: 100%;
+    background-color: #ffe600;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-interno{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 80px auto 80px;
+    justify-content: center;
+    align-items: center;
+}
+.container-interno > .search > input{
+    width: 800px;
+    padding: 8px;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+}
+.container-interno > .actions > button{
+    width: 50px;
+    height: 37px;
+    border:none;
+}
